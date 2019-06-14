@@ -12,5 +12,3 @@ print (x+y)
 
 #ls() 변수 목록
 #rm() 변수제거 rm(x)
-
-rm(x)
