@@ -11,7 +11,7 @@ print(remain_red)
 print(remain[-1])
 print(remain[-2])
 print(remain[-c(1,2)])
-#TRUE FALSE 로 가져올지 말지 정할 수 있다.
+#TRUE FALSE 로 가져올지 말지 정할 수 있다. 참고로 첫번째가 TRUE면 기본적으로 벡터의 개수가 달라 적용안하는건 TRUE ,FALSE면 FALSE 가 기본값이다
 print(remain[c(FALSE, TRUE, FALSE, TRUE)] )
-selection_vector <- c(FALSE, TRUE, FALSE, TRUE)
+selection_vector <- c(TRUE, TRUE, FALSE)
 print(remain[selection_vector]) 
