@@ -1,4 +1,4 @@
-#배열이다 배열[1,2] 이런식으로 각 항목을 가져올 수 있다.
+#배열이다 배열[1,2] 이런식으로 각 항목을 가져올 수 있다. 그냥 2차원이다
 #matrix(숫자, 행의수 ncol =  혹은 bycol = TRUE 로 자동으로 채워지개, nrow 열의수  혹은 byrow로 자동으로 채워지게)
 
 print(matrix(1:6, nrow = 2))
@@ -32,3 +32,7 @@ print(char)
 num <- matrix(1:8, ncol = 2) 
 char <- matrix(LETTERS[1:6], nrow = 4, ncol = 3)
 print(cbind(num, char)) 
+
+#행렬은 2차원
+#R의 행렬을 채우기 위해 너무 짧은 데이터 시퀀스를 사용할 경우 어떻게 되는가? R은 행렬 열을 열별로 채우고 데이터 시퀀스를 반복한다.
+#
