@@ -30,9 +30,12 @@ tom <- data.frame("Tom", 37, FALSE, 183)
 tom <-- data.frame(name = "Tom", age = 37, child = FALSE, height = 183)
 print(rbind(people,tom))
 print("-----------------------")
+#아래는 행 삭제방법
+print(people[-1,])
+print("-----------------------")
 #아래는 정렬방법
 print(sort(people$age)) #값의 오름차순 정렬 
-ranks <- order(people$age) #순서 오름차순 정렬으로 따져서 3번째 1번째 2번째 5번째 4번째 위치에 값들이 포진해 있다
+ranks <- order(people$age) #순서 오름차순 정렬으로 따져서 3번째 1번째 2번째 5번째 4번째 위치에 값들이 포진해 있다   
 print(ranks)
 print(people[ranks, ]) #이로서 정렬순서리스트를 이용해서 정렬된것을 보여줄 수 있다는 것을 알 수 있다.
 people[order(people$age, decreasing = TRUE), ] #이걸로 내림차순으로 정렬할 수 있다.
