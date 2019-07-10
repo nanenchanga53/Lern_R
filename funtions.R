@@ -36,6 +36,8 @@ print(seq(from = 1, by = 2, length.out = 10)) # 10개 출력
 #log(x,base = n) x를 밑이 n인 log 취하기
 #exp(x) x를 지수변환하기
 #factorial(x) x의 팩토리얼
+#lm(테이터프레임,데이터프레임) 선형 회귀계수 계산
+#coef(선형회귀계수 계산결과) 회귀계수 출력
 
 #data.frame(열,열,열) CSV형태의 데이터 프레임을 만든다. 
 #head(데이터프레임,n=숫자) 데이터 프레임에서 n개의 숫자만큼 앞의 자료를 보여준다.
@@ -53,3 +55,9 @@ print(rbind(1:3, 1:3))
 #factor()로 중복되는 값을 없앤 값(범주)만 출력
 blood_factor <- factor(blood)
 print(blood_factor)
+
+#plot(데이터프레임) 기본적인 그래프그리기
+#par() 그래프그리기 설정
+#abline() 직선그리기 추가
+#lines(데이터 프레임, 데이터프레임) 이어지는 직선 그리기
+#text(x좌표,y좌표,텍스트) x,y 좌표에 텍스트를 표기
